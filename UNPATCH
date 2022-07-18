@@ -1,0 +1,4 @@
+game:service"ReplicatedStorage".DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(data) 
+    local user = data.FromSpeaker
+    local msg = data.Message
+    cmds(msg, game:service"Players"[user].UserId)
